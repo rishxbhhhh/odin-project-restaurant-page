@@ -100,7 +100,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: aliceblue;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .menu-item > h2{
