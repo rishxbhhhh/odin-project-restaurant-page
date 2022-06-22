@@ -82,7 +82,7 @@ img {
   color: rgba(0, 0, 0, 0.7);
   font-weight: 600;
   border-radius: 5px;
-  max-width: 50%;
+  max-width: 70%;
   font-size: 2rem;
   background-color: antiquewhite;
   background: rgba(255, 255, 255, 0.25);
@@ -128,11 +128,25 @@ hr.menu__item__separation{
 }
 
 img.restaurant__image{
-  border-radius: 8px;
+  border-radius: 4px;
+  width: 99%;
+  margin: 4px;
 }
 
 p.restaurant__about{
-  margin-top: 20px;
+  margin: 1rem;
+  font-size: 4vh;
+}
+
+.contact > p{
+  margin: 1rem;
+  font-size: 3vh;
+}
+
+.contact > img{
+  border-radius: 4px;
+  width: 99%;
+  margin: 4px;
 }
 
 /* FOOTER */
@@ -150,10 +164,17 @@ p.restaurant__about{
   html {
     font-size: 50%;
   }
-/* 
-  .main{
-    max-width: 85%;
-  } */
+  p.restaurant__about{
+    font-size: 5vh;
+    text-align: left;
+    width: 90%;
+  }
+
+  img.restaurant__image{
+    margin: 0;
+    width: 100%;
+    border-radius: 2px;
+  }
 }
 
 /* scrollbar */
