@@ -13,12 +13,19 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-image: url("images/bg.webp");
-  background-size: cover;
-  height: 100vh;
   color: rgb(148, 125, 96);
   font-family: Roboto, "Luckiest One", cursive;
   text-align: center;
+  background-image: url("images/bg.webp");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
@@ -36,6 +43,23 @@ img {
   width: 100%;
 }
 
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact > p{
+  margin: 1rem;
+}
+
+.contact > img{
+  border-radius: 8px;
+  margin: 1rem 1rem 3rem 1rem;
+  width: 90%;
+}
+
 /* HEADER */
 
 .header {
@@ -45,25 +69,70 @@ img {
 
 .restaurant__name {
   font-size: 6rem;
+  width: 100vw;
 }
 
 /* MAIN */
 
 .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: rgba(0, 0, 0, 0.7);
   font-weight: 600;
   border-radius: 5px;
-  max-width: 800px;
-  margin: 100px auto;
-  font-size: 3rem;
+  max-width: 50%;
+  font-size: 2rem;
   background-color: antiquewhite;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  max-height: 80vh;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+.menu-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.menu-item > h2{
+  margin-top: 1.5rem;
+}
+
+.menu-item > p{
+  margin-bottom: 1rem;
+}
+.menu-item > img{
+  width: 150px;
+  border-radius: 8px;
+}
+
+.ingredients{
+  width: 90%;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+hr.menu__item__separation{
+  color: aliceblue;
+  width: 200px;
+  margin: 30px;
+}
+
+img.restaurant__image{
+  border-radius: 8px;
+}
+
+p.restaurant__about{
+  margin-top: 20px;
 }
 
 /* FOOTER */
@@ -73,12 +142,55 @@ img {
   font-size: 1.5rem;
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
-  position: fixed;
   bottom: 0;
+  position: fixed;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   html {
     font-size: 50%;
   }
+/* 
+  .main{
+    max-width: 85%;
+  } */
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(155, 155, 155, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(222, 222, 222, 0.4);
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.navitem{
+  margin: 1rem;
+}
+
+.navitem:hover{
+  position: relative;
+  color: antiquewhite;
+  cursor: pointer;
+}
+
+.selected__menu{
+  border-bottom: 2px solid antiquewhite;
 }
